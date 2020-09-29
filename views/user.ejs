@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1><%=user.username %></h1>
+    <h2>Fullname: user.full_name</h2>
+    <ul>
+      Messages <%= user.messages.forEach(message => { ) %>
+      <li><%= message %></li>
+      <%}); %>
+    </ul>
+  </body>
+</html>
